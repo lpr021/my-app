@@ -1,0 +1,178 @@
+.about-page {
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fdfdfd;
+  color: #2e2e2e;
+}
+
+.about-page h2 {
+  font-size: 2.2rem;
+  color: #4B6CB7;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.about-page h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #4B6CB7, #6A82FB);
+  margin: 10px auto 30px;
+  border-radius: 4px;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.about-page section:hover h2 {
+  color: #009688; /* Deep Blue-Green Hover */
+}
+
+.about-page section:hover h2::after {
+  width: 100px;
+  background: linear-gradient(to right, #009688, #4B6CB7);
+}
+
+.company-story,
+.team-founders,
+.certifications {
+  background: #ffffff;
+  margin-bottom: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.company-story:hover,
+.team-founders:hover,
+.certifications:hover {
+  background: #f4f8ff;
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.company-story p,
+.team-info p,
+.cert-item p {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  text-align: justify;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.company-story p:hover,
+.team-info p:hover,
+.cert-item p:hover {
+  color: #009688;
+}
+
+.team-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-box img {
+  width: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-box img:hover {
+  transform: scale(1.05);
+}
+
+.team-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.team-info h3 {
+  color: #4B6CB7;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.team-info h3:hover {
+  color: #D6A4A4; /* Soft Accent Pink */
+}
+
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.cert-item {
+  width: 200px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+  background-color: #f0f8ff;
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cert-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.cert-item img:hover {
+  transform: scale(1.04);
+}
+
+.cert-item p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+.cert-item p:hover {
+  color: #4B6CB7;
+}
+
+/* 🌐 Responsive Design */
+@media screen and (max-width: 768px) {
+  .team-box {
+    flex-direction: column;
+  }
+
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .company-story,
+  .team-founders,
+  .certifications {
+    padding: 25px 20px;
+  }
+
+  .cert-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
