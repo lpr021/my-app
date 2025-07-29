@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FeaturedListings.css';
 
 const listings = [
@@ -77,12 +77,27 @@ const listings = [
 ];
 
 const FeaturedListings = () => {
+  const [selected, setSelected] = useState(null); // Null initially — modal won't auto open
+ // Default ga first one
+
+  const openDetails = (item) => {
+    setSelected(item);
+  };
+
+  const closeDetails = () => {
+    setSelected(null);
+  };
+
   return (
     <section className="featured-listings">
       <h2 className="heading">🏡 Featured Listings in Vijayawada</h2>
       <div className="cards-container">
         {listings.map((property, index) => (
-          <div className="property-card" key={index}>
+          <div
+            className="property-card"
+            key={index}
+            onClick={() => openDetails(property)}
+          >
             <div className="image-wrapper">
               <img src={property.image} alt={property.title} />
             </div>
@@ -94,6 +109,23 @@ const FeaturedListings = () => {
           </div>
         ))}
       </div>
+
+      {/* Modal for Property Details */}
+      {selected && (
+        <div className="details-modal-overlay" onClick={closeDetails}>
+          <div className="details-box" onClick={(e) => e.stopPropagation()}>
+            <button className="close-button" onClick={closeDetails}>×</button>
+            <img src={selected.image} alt={selected.title} />
+            <h3>{selected.title}</h3>
+            <p><strong>Location:</strong> {selected.location}</p>
+            <p><strong>Price:</strong> {selected.price}</p>
+            <p><strong>Description:</strong> Beautiful property with high potential in a prime area of Vijayawada.</p>
+            <p style={{ marginTop: '12px', color: '#0077cc', fontWeight: '500' }}>
+              📞 For more details, contact: <strong>9876543210</strong>
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

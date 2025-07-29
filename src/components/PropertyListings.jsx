@@ -58,25 +58,25 @@ const PropertyListings = () => {
       title: '3BHK Villa with Lawn',
       location: 'Enikepadu, Vijayawada',
       price: '₹1 Cr',
-      image: 'https://source.unsplash.com/featured/?villa3'
+      image: 'https://gos3.ibcdn.com/0037051b-565b-489c-b970-0554b7c88314.png'
     },
     {
       title: 'Contemporary Villa',
       location: 'Poranki, Vijayawada',
       price: '₹1.3 Cr',
-      image: 'https://source.unsplash.com/featured/?villa4'
+      image: 'https://wallpapercrafter.com/desktop4/1187391-design-house-lawn-Villa-pool-modern-houses-luxury.jpg'
     },
     {
       title: 'Elegant Garden Villa',
       location: 'Gunadala, Vijayawada',
       price: '₹1.6 Cr',
-      image: 'https://source.unsplash.com/featured/?villa5'
+      image: 'https://t4.ftcdn.net/jpg/03/70/64/43/360_F_370644357_MDF4UXLAXTyyi2OyuK66tWW9cA2f8svL.jpg'
     },
     {
       title: 'Classic Family Villa',
       location: 'Bhavanipuram, Vijayawada',
       price: '₹1.4 Cr',
-      image: 'https://source.unsplash.com/featured/?villa6'
+      image: 'https://www.chennaidreamhomes.com/wp-content/uploads/2024/04/Type1-villas-850x570.jpg'
     }
   ];
 
@@ -85,37 +85,37 @@ const PropertyListings = () => {
       title: 'Open Residential Plot',
       location: 'Ibrahimpatnam, Vijayawada',
       price: '₹25 Lakhs',
-      image: 'https://source.unsplash.com/featured/?land1'
+      image: 'https://www.shutterstock.com/image-photo/land-plot-aerial-view-include-260nw-1906603717.jpg'
     },
     {
       title: 'Corner Plot 200 Sq.Yards',
       location: 'Gollapudi, Vijayawada',
       price: '₹32 Lakhs',
-      image: 'https://source.unsplash.com/featured/?land2'
+      image: 'https://www.imaginationshaper.com/product_images/corner-plot-house-design731.jpg'
     },
     {
       title: 'East Facing Plot',
       location: 'Vidhyadharapuram, Vijayawada',
       price: '₹28 Lakhs',
-      image: 'https://source.unsplash.com/featured/?land3'
+      image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY8ot2b4KL0hYjmQQLZBdEvVX0CLVy1hlWmI_N7dwjIH7v8i3KTrH2eC_2qz7XcsMtTtBup6Nkqqo8FQGxx6Djmi2uRJJxGwgpYK-c2JFiClNoUWi5mCZrnjTixBSluA7HtbG0ytoL8WU/s1600/grand-kerala-home-design.jpg'
     },
     {
       title: 'DTCP Approved Plot',
       location: 'Penamaluru, Vijayawada',
       price: '₹35 Lakhs',
-      image: 'https://source.unsplash.com/featured/?land4'
+      image: 'https://imagecdn.99acres.com/media1/30941/8/618828047M-1752474126351.webp'
     },
     {
       title: 'Premium Plot 300 Sq.Yards',
       location: 'Ramavarappadu, Vijayawada',
       price: '₹40 Lakhs',
-      image: 'https://source.unsplash.com/featured/?land5'
+      image: 'https://static.vecteezy.com/system/resources/previews/014/445/766/non_2x/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG'
     },
     {
       title: 'North Facing Plot',
       location: 'Poranki, Vijayawada',
       price: '₹36 Lakhs',
-      image: 'https://source.unsplash.com/featured/?land6'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_jL7nCDwIKKZXimLdp9B7436cjEJxOniMg&s'
     }
   ];
 
